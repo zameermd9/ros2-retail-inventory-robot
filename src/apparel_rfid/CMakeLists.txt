@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.8)
+project(apparel_rfid)
+find_package(ament_cmake REQUIRED)
+install(DIRECTORY launch urdf worlds config DESTINATION share/${PROJECT_NAME})
+install(PROGRAMS scripts/sensor.py scripts/patrol.py DESTINATION lib/${PROJECT_NAME})
+install(FILES scripts/motion.py DESTINATION lib/${PROJECT_NAME})
+ament_package()

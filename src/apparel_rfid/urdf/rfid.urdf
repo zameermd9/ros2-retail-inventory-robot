@@ -1,0 +1,711 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="warehouse_amr">
+  <material name="navy">
+    <color rgba=".055 .11 .18 1" />
+  </material>
+  <material name="silver">
+    <color rgba=".65 .70 .75 1" />
+  </material>
+  <material name="black">
+    <color rgba=".025 .03 .04 1" />
+  </material>
+  <material name="orange">
+    <color rgba="1 .38 .035 1" />
+  </material>
+  <material name="blue">
+    <color rgba=".04 .35 .65 1" />
+  </material>
+  <material name="lens">
+    <color rgba=".02 .08 .12 1" />
+  </material>
+  <material name="green">
+    <color rgba=".1 .95 .35 1" />
+  </material>
+  <material name="red">
+    <color rgba=".9 .025 .02 1" />
+  </material>
+  <material name="white">
+    <color rgba=".9 .93 .95 1" />
+  </material>
+  <link name="base_footprint" />
+  <link name="base_link">
+    <inertial>
+      <mass value="28" />
+      <inertia ixx="0.65" iyy="1.15" izz="1.45" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual name="chassis">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.78 0.5 0.22" />
+      </geometry>
+      <material name="navy" />
+    </visual>
+    <collision name="chassis_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.78 0.5 0.22" />
+      </geometry>
+    </collision>
+    <visual name="upper_cover">
+      <origin xyz="0 0 0.1275" rpy="0 0 0" />
+      <geometry>
+        <box size="0.7 0.46 0.035" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <visual name="payload_deck">
+      <origin xyz="-0.1 0 0.154" rpy="0 0 0" />
+      <geometry>
+        <box size="0.42 0.36 0.018" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <visual name="bumper_-0.405">
+      <origin xyz="-0.405 0 -0.065" rpy="0 0 0" />
+      <geometry>
+        <box size="0.05 0.52 0.075" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision name="bumper_-0.405_collision">
+      <origin xyz="-0.405 0 -0.065" rpy="0 0 0" />
+      <geometry>
+        <box size="0.05 0.52 0.075" />
+      </geometry>
+    </collision>
+    <visual name="orange_trim_-0.405">
+      <origin xyz="-0.431325 0 -0.025" rpy="0 0 0" />
+      <geometry>
+        <box size="0.015 0.46 0.022" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+    <visual name="bumper_0.405">
+      <origin xyz="0.405 0 -0.065" rpy="0 0 0" />
+      <geometry>
+        <box size="0.05 0.52 0.075" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision name="bumper_0.405_collision">
+      <origin xyz="0.405 0 -0.065" rpy="0 0 0" />
+      <geometry>
+        <box size="0.05 0.52 0.075" />
+      </geometry>
+    </collision>
+    <visual name="orange_trim_0.405">
+      <origin xyz="0.431325 0 -0.025" rpy="0 0 0" />
+      <geometry>
+        <box size="0.015 0.46 0.022" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+    <visual name="side_panel_-0.258">
+      <origin xyz="0.06 -0.258 0.02" rpy="0 0 0" />
+      <geometry>
+        <box size="0.48 0.014 0.105" />
+      </geometry>
+      <material name="blue" />
+    </visual>
+    <visual name="vent_-0.12_-0.258">
+      <origin xyz="-0.12 -0.26444999999999996 0.035" rpy="0 0 0" />
+      <geometry>
+        <box size="0.018 0.017 0.065" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <visual name="vent_-0.06_-0.258">
+      <origin xyz="-0.06 -0.26444999999999996 0.035" rpy="0 0 0" />
+      <geometry>
+        <box size="0.018 0.017 0.065" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <visual name="vent_0_-0.258">
+      <origin xyz="0 -0.26444999999999996 0.035" rpy="0 0 0" />
+      <geometry>
+        <box size="0.018 0.017 0.065" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <visual name="vent_0.06_-0.258">
+      <origin xyz="0.06 -0.26444999999999996 0.035" rpy="0 0 0" />
+      <geometry>
+        <box size="0.018 0.017 0.065" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <visual name="vent_0.12_-0.258">
+      <origin xyz="0.12 -0.26444999999999996 0.035" rpy="0 0 0" />
+      <geometry>
+        <box size="0.018 0.017 0.065" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <visual name="bolt_-0.32_-0.258">
+      <origin xyz="-0.32 -0.258 0.065" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.009" length="0.008" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <visual name="bolt_0.32_-0.258">
+      <origin xyz="0.32 -0.258 0.065" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.009" length="0.008" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <visual name="side_panel_0.258">
+      <origin xyz="0.06 0.258 0.02" rpy="0 0 0" />
+      <geometry>
+        <box size="0.48 0.014 0.105" />
+      </geometry>
+      <material name="blue" />
+    </visual>
+    <visual name="vent_-0.12_0.258">
+      <origin xyz="-0.12 0.26444999999999996 0.035" rpy="0 0 0" />
+      <geometry>
+        <box size="0.018 0.017 0.065" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <visual name="vent_-0.06_0.258">
+      <origin xyz="-0.06 0.26444999999999996 0.035" rpy="0 0 0" />
+      <geometry>
+        <box size="0.018 0.017 0.065" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <visual name="vent_0_0.258">
+      <origin xyz="0 0.26444999999999996 0.035" rpy="0 0 0" />
+      <geometry>
+        <box size="0.018 0.017 0.065" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <visual name="vent_0.06_0.258">
+      <origin xyz="0.06 0.26444999999999996 0.035" rpy="0 0 0" />
+      <geometry>
+        <box size="0.018 0.017 0.065" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <visual name="vent_0.12_0.258">
+      <origin xyz="0.12 0.26444999999999996 0.035" rpy="0 0 0" />
+      <geometry>
+        <box size="0.018 0.017 0.065" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <visual name="bolt_-0.32_0.258">
+      <origin xyz="-0.32 0.258 0.065" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.009" length="0.008" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <visual name="bolt_0.32_0.258">
+      <origin xyz="0.32 0.258 0.065" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.009" length="0.008" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <visual name="front_light_-0.16">
+      <origin xyz="0.395 -0.16 0.06" rpy="0 0 0" />
+      <geometry>
+        <box size="0.014 0.065 0.025" />
+      </geometry>
+      <material name="white" />
+    </visual>
+    <visual name="rear_light_-0.16">
+      <origin xyz="-0.395 -0.16 0.06" rpy="0 0 0" />
+      <geometry>
+        <box size="0.014 0.06 0.025" />
+      </geometry>
+      <material name="red" />
+    </visual>
+    <visual name="front_light_0.16">
+      <origin xyz="0.395 0.16 0.06" rpy="0 0 0" />
+      <geometry>
+        <box size="0.014 0.065 0.025" />
+      </geometry>
+      <material name="white" />
+    </visual>
+    <visual name="rear_light_0.16">
+      <origin xyz="-0.395 0.16 0.06" rpy="0 0 0" />
+      <geometry>
+        <box size="0.014 0.06 0.025" />
+      </geometry>
+      <material name="red" />
+    </visual>
+    <visual name="emergency_stop_base">
+      <origin xyz="-0.22 0.13 0.17" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.015" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+    <visual name="emergency_stop">
+      <origin xyz="-0.22 0.13 0.19" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.023" length="0.025" />
+      </geometry>
+      <material name="red" />
+    </visual>
+    <visual name="status_strip">
+      <origin xyz="-0.23 -0.18 0.17" rpy="0 0 0" />
+      <geometry>
+        <box size="0.12 0.018 0.013" />
+      </geometry>
+      <material name="green" />
+    </visual>
+    <visual name="camera_mast">
+      <origin xyz="0.2 0 0.25" rpy="0 0 0" />
+      <geometry>
+        <box size="0.045 0.06 0.25" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision name="camera_mast_collision">
+      <origin xyz="0.2 0 0.25" rpy="0 0 0" />
+      <geometry>
+        <box size="0.045 0.06 0.25" />
+      </geometry>
+    </collision>
+    <visual name="lidar_pedestal">
+      <origin xyz="-0.1 0 0.3" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.025" length="0.3" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision name="lidar_pedestal_collision">
+      <origin xyz="-0.1 0 0.3" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.025" length="0.3" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint" />
+    <child link="base_link" />
+    <origin xyz="0 0 0.24" rpy="0 0 0" />
+  </joint>
+  <link name="left_wheel_link">
+    <inertial>
+      <mass value="1.3" />
+      <inertia ixx="0.0065" iyy="0.011" izz="0.0065" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual name="tire">
+      <origin xyz="0 0 0" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.13" length="0.075" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision name="tire_collision">
+      <origin xyz="0 0 0" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.13" length="0.075" />
+      </geometry>
+    </collision>
+    <visual name="hub_-1">
+      <origin xyz="0 -0.04 0" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.075" length="0.006" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <visual name="hub_cap_-1">
+      <origin xyz="0 -0.044 0" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.01" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+    <visual name="hub_1">
+      <origin xyz="0 0.04 0" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.075" length="0.006" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <visual name="hub_cap_1">
+      <origin xyz="0 0.044 0" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.01" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+  </link>
+  <joint name="left_wheel_joint" type="continuous">
+    <parent link="base_link" />
+    <child link="left_wheel_link" />
+    <origin xyz="0 0.295 -0.11" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <dynamics damping=".05" friction="0" />
+  </joint>
+  <gazebo reference="left_wheel_link">
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+  </gazebo>
+  <link name="right_wheel_link">
+    <inertial>
+      <mass value="1.3" />
+      <inertia ixx="0.0065" iyy="0.011" izz="0.0065" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual name="tire">
+      <origin xyz="0 0 0" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.13" length="0.075" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision name="tire_collision">
+      <origin xyz="0 0 0" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.13" length="0.075" />
+      </geometry>
+    </collision>
+    <visual name="hub_-1">
+      <origin xyz="0 -0.04 0" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.075" length="0.006" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <visual name="hub_cap_-1">
+      <origin xyz="0 -0.044 0" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.01" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+    <visual name="hub_1">
+      <origin xyz="0 0.04 0" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.075" length="0.006" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <visual name="hub_cap_1">
+      <origin xyz="0 0.044 0" rpy="1.5707963267948966 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.01" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+  </link>
+  <joint name="right_wheel_joint" type="continuous">
+    <parent link="base_link" />
+    <child link="right_wheel_link" />
+    <origin xyz="0 -0.295 -0.11" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <dynamics damping=".05" friction="0" />
+  </joint>
+  <gazebo reference="right_wheel_link">
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+  </gazebo>
+  <link name="front_caster_link">
+    <inertial>
+      <mass value="0.25" />
+      <inertia ixx="0.00025" iyy="0.00025" izz="0.00025" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual name="caster_ball">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.045" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision name="caster_ball_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.045" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="front_caster_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="front_caster_link" />
+    <origin xyz="0.29 0 -0.195" rpy="0 0 0" />
+  </joint>
+  <gazebo reference="front_caster_link">
+    <mu1>.001</mu1>
+    <mu2>.001</mu2>
+  </gazebo>
+  <link name="rear_caster_link">
+    <inertial>
+      <mass value="0.25" />
+      <inertia ixx="0.00025" iyy="0.00025" izz="0.00025" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual name="caster_ball">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.045" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision name="caster_ball_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.045" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rear_caster_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="rear_caster_link" />
+    <origin xyz="-0.29 0 -0.195" rpy="0 0 0" />
+  </joint>
+  <gazebo reference="rear_caster_link">
+    <mu1>.001</mu1>
+    <mu2>.001</mu2>
+  </gazebo>
+  <link name="camera_link">
+    <inertial>
+      <mass value="0.3" />
+      <inertia ixx="0.0005" iyy="0.0006" izz="0.0008" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual name="camera_housing">
+      <origin xyz="-0.035 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.07 0.18 0.055" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision name="camera_housing_collision">
+      <origin xyz="-0.035 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.07 0.18 0.055" />
+      </geometry>
+    </collision>
+    <visual name="lens_-0.06">
+      <origin xyz="0.004 -0.06 0" rpy="0 1.5707963267948966 0" />
+      <geometry>
+        <cylinder radius="0.014" length="0.006" />
+      </geometry>
+      <material name="lens" />
+    </visual>
+    <visual name="lens_0">
+      <origin xyz="0.004 0 0" rpy="0 1.5707963267948966 0" />
+      <geometry>
+        <cylinder radius="0.014" length="0.006" />
+      </geometry>
+      <material name="lens" />
+    </visual>
+    <visual name="lens_0.06">
+      <origin xyz="0.004 0.06 0" rpy="0 1.5707963267948966 0" />
+      <geometry>
+        <cylinder radius="0.014" length="0.006" />
+      </geometry>
+      <material name="lens" />
+    </visual>
+  </link>
+  <joint name="camera_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="camera_link" />
+    <origin xyz="0.24 0 0.395" rpy="0 0 0" />
+  </joint>
+  <link name="camera_optical_frame" />
+  <joint name="camera_optical_joint" type="fixed">
+    <parent link="camera_link" />
+    <child link="camera_optical_frame" />
+    <origin xyz="0 0 0" rpy="-1.5707963267948966 0 -1.5707963267948966" />
+  </joint>
+  <link name="lidar_link">
+    <inertial>
+      <mass value="0.3" />
+      <inertia ixx="0.0005" iyy="0.0005" izz="0.0008" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual name="lidar_base">
+      <origin xyz="0 0 -0.0325" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.067" length="0.025" />
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision name="lidar_base_collision">
+      <origin xyz="0 0 -0.0325" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.067" length="0.025" />
+      </geometry>
+    </collision>
+    <visual name="lidar_window">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.06" length="0.045" />
+      </geometry>
+      <material name="lens" />
+    </visual>
+    <collision name="lidar_window_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.06" length="0.045" />
+      </geometry>
+    </collision>
+    <visual name="lidar_cap">
+      <origin xyz="0 0 0.03" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.064" length="0.012" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+  </link>
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="lidar_link" />
+    <origin xyz="-0.1 0 0.49" rpy="0 0 0" />
+  </joint>
+  <gazebo reference="lidar_link">
+    <sensor name="lidar" type="gpu_lidar">
+      <always_on>true</always_on>
+      <update_rate>10</update_rate>
+      <topic>/scan</topic>
+      <gz_frame_id>lidar_link</gz_frame_id>
+      <visualize>false</visualize>
+      <lidar>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.141592653589793</min_angle>
+            <max_angle>3.141592653589793</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.12</min>
+          <max>12</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise type="gaussian">
+          <mean>0</mean>
+          <stddev>0.005</stddev>
+        </noise>
+      </lidar>
+    </sensor>
+  </gazebo>
+  <gazebo reference="camera_link">
+    <sensor name="front_camera" type="camera">
+      <always_on>true</always_on>
+      <update_rate>5</update_rate>
+      <topic>/camera/image_raw</topic>
+      <gz_frame_id>camera_optical_frame</gz_frame_id>
+      <camera>
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>360</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.05</near>
+          <far>20</far>
+        </clip>
+        <camera_info_topic>/camera/camera_info</camera_info_topic>
+        <noise type="gaussian">
+          <mean>0</mean>
+          <stddev>0.003</stddev>
+        </noise>
+      </camera>
+    </sensor>
+  </gazebo>
+  <gazebo>
+    <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_separation>0.59</wheel_separation>
+      <wheel_radius>0.13</wheel_radius>
+      <topic>/amr/cmd_vel</topic>
+      <odom_topic>/odom</odom_topic>
+      <tf_topic>/tf</tf_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_footprint</child_frame_id>
+      <odom_publish_frequency>30</odom_publish_frequency>
+      <max_linear_velocity>0.5</max_linear_velocity>
+      <min_linear_velocity>-0.3</min_linear_velocity>
+      <max_angular_velocity>1.0</max_angular_velocity>
+      <min_angular_velocity>-1.0</min_angular_velocity>
+      <max_linear_acceleration>0.5</max_linear_acceleration>
+      <min_linear_acceleration>-0.5</min_linear_acceleration>
+    </plugin>
+    <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher">
+      <topic>/joint_states</topic>
+      <joint_name>left_wheel_joint</joint_name>
+      <joint_name>right_wheel_joint</joint_name>
+    </plugin>
+  </gazebo>
+  <link name="rfid_front_link">
+    <visual>
+      <geometry>
+        <box size=".024 .14 .095" />
+      </geometry>
+      <material name="panel_front">
+        <color rgba=".05 .38 .48 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rfid_front_mount" type="fixed">
+    <parent link="base_footprint" />
+    <child link="rfid_front_link" />
+    <origin xyz="0.33 0.0 .50" rpy="0 0 0.0" />
+  </joint>
+  <link name="rfid_left_link">
+    <visual>
+      <geometry>
+        <box size=".024 .14 .095" />
+      </geometry>
+      <material name="panel_left">
+        <color rgba=".05 .38 .48 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rfid_left_mount" type="fixed">
+    <parent link="base_footprint" />
+    <child link="rfid_left_link" />
+    <origin xyz="0.0 0.28 .50" rpy="0 0 1.5707963267948966" />
+  </joint>
+  <link name="rfid_rear_link">
+    <visual>
+      <geometry>
+        <box size=".024 .14 .095" />
+      </geometry>
+      <material name="panel_rear">
+        <color rgba=".05 .38 .48 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rfid_rear_mount" type="fixed">
+    <parent link="base_footprint" />
+    <child link="rfid_rear_link" />
+    <origin xyz="-0.33 0.0 .50" rpy="0 0 3.141592653589793" />
+  </joint>
+  <link name="rfid_right_link">
+    <visual>
+      <geometry>
+        <box size=".024 .14 .095" />
+      </geometry>
+      <material name="panel_right">
+        <color rgba=".05 .38 .48 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rfid_right_mount" type="fixed">
+    <parent link="base_footprint" />
+    <child link="rfid_right_link" />
+    <origin xyz="0.0 -0.28 .50" rpy="0 0 -1.5707963267948966" />
+  </joint>
+  <gazebo>
+    <plugin filename="gz-sim-odometry-publisher-system" name="gz::sim::systems::OdometryPublisher">
+      <dimensions>2</dimensions>
+      <odom_topic>/rfid/model_pose</odom_topic>
+      <odom_frame>world</odom_frame>
+      <robot_base_frame>rfid_model</robot_base_frame>
+      <tf_topic>/rfid/sim_tf</tf_topic>
+      <odom_publish_frequency>5</odom_publish_frequency>
+    </plugin>
+  </gazebo>
+</robot>

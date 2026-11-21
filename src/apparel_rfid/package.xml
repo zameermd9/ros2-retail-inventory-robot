@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+  <name>apparel_rfid</name>
+  <version>0.1.0</version>
+  <description>Scheduled item-level RFID store patrol</description>
+  <license>Apache-2.0</license>
+  <maintainer email="maintainer@example.com">Store simulation</maintainer>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>warehouse_amr</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend>nav2_msgs</exec_depend>
+  <exec_depend>slam_toolbox</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>action_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+  <exec_depend>apparel_store</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>python3-pil</exec_depend>
+</package>

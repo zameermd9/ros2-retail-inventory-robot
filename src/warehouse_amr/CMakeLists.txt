@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.8)
+project(warehouse_amr)
+find_package(ament_cmake REQUIRED)
+install(DIRECTORY urdf worlds launch config rviz DESTINATION share/${PROJECT_NAME})
+install(PROGRAMS scripts/cmd_watchdog.py scripts/verify_runtime.py DESTINATION lib/${PROJECT_NAME})
+install(FILES README.md VALIDATION.md DESTINATION share/${PROJECT_NAME})
+ament_package()

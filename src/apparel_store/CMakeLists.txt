@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.8)
+project(apparel_store)
+find_package(ament_cmake REQUIRED)
+install(DIRECTORY worlds maps meshes config launch DESTINATION share/${PROJECT_NAME})
+install(PROGRAMS scripts/inventory.py DESTINATION lib/${PROJECT_NAME})
+ament_package()
