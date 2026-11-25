@@ -128,7 +128,7 @@ The clock test therefore reported **FAIL** because another stream failed during 
 
 The camera interruption is still being investigated.
 
-![Diagnostic test output](images/diagnostics-results.png)
+![Diagnostic test output](images/results.png)
 
 ### Saved Reports
 
@@ -139,10 +139,8 @@ Each monitoring or test session creates a separate report folder.
 | `events.csv` | Changes between healthy and error states |
 | `tests.csv` | Test outcomes and detection/recovery times |
 
-- [View the recorded test results](results/diagnostics/20261125-051119-906170/tests.csv)
-- [View the diagnostic events](results/diagnostics/20261125-051119-906170/events.csv)
 
-![Saved report files](images/diagnostics-report-files.png)
+![Saved report files](images/tests.png)
 
 ## Tools Used
 
