@@ -1,0 +1,5 @@
+component,result,detection_seconds,recovery_seconds,detail
+LiDAR,PASS,2.995,2.254,Dropout detected and stream recovered.
+Camera,PASS,2.752,2.004,Dropout detected and stream recovered.
+Odometry,PASS,2.993,0.251,Dropout detected and stream recovered.
+Clock,FAIL,3.001,2.002,detected=True; recovered=True; other_fault=True

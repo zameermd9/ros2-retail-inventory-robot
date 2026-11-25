@@ -1,0 +1,23 @@
+elapsed_seconds,component,status,detail,mode
+1.058,LiDAR,ERROR,"Topic found, but no data received",test
+1.058,Camera,ERROR,"Topic found, but no data received",test
+1.058,Odometry,ERROR,"Topic found, but no data received",test
+1.058,Clock,ERROR,"Topic found, but no data received",test
+1.255,LiDAR,OK,Messages arriving,test
+1.255,Camera,OK,Messages arriving,test
+1.255,Odometry,OK,Messages arriving,test
+1.255,Clock,OK,Clock changing,test
+7.255,LiDAR,ERROR,No messages for more than 3 seconds,test
+10.757,LiDAR,OK,Messages arriving,test
+12.255,Camera,ERROR,No messages for more than 3 seconds,test
+12.759,Camera,OK,Messages arriving,test
+17.257,Camera,ERROR,No messages for more than 3 seconds,test
+19.022,Camera,OK,Messages arriving,test
+25.008,Camera,ERROR,No messages for more than 3 seconds,test
+30.261,Camera,OK,Messages arriving,test
+39.755,Odometry,ERROR,No messages for more than 3 seconds,test
+43.261,Odometry,OK,Messages arriving,test
+53.01,Clock,ERROR,Clock missing or simulation time not changing,test
+53.759,Camera,ERROR,No messages for more than 3 seconds,test
+56.506,Clock,OK,Clock changing,test
+58.257,Camera,OK,Messages arriving,test

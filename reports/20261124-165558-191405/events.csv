@@ -1,0 +1,5 @@
+elapsed_seconds,component,status,detail,mode
+0.327,LiDAR,ERROR,No publisher found,live
+0.327,Camera,ERROR,No publisher found,live
+0.327,Odometry,ERROR,No publisher found,live
+0.327,Clock,ERROR,No publisher found,live

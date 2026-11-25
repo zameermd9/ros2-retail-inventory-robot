@@ -1,0 +1,63 @@
+elapsed_seconds,component,status,detail,mode
+0.285,LiDAR,ERROR,No publisher found,live
+0.285,Camera,ERROR,No publisher found,live
+0.285,Odometry,ERROR,No publisher found,live
+0.285,Clock,ERROR,No publisher found,live
+144.482,LiDAR,ERROR,"Topic found, but no data received",live
+144.482,Camera,ERROR,"Topic found, but no data received",live
+144.482,Odometry,ERROR,"Topic found, but no data received",live
+144.482,Clock,ERROR,"Topic found, but no data received",live
+149.034,Clock,OK,Clock changing,live
+150.284,LiDAR,OK,Messages arriving,live
+150.535,Odometry,OK,Messages arriving,live
+151.034,Camera,OK,Messages arriving,live
+154.537,Camera,ERROR,No messages for more than 3 seconds,live
+162.537,Camera,OK,Messages arriving,live
+177.536,Camera,ERROR,No messages for more than 3 seconds,live
+178.038,Camera,OK,Messages arriving,live
+181.534,Camera,ERROR,No messages for more than 3 seconds,live
+183.287,Camera,OK,Messages arriving,live
+186.285,Camera,ERROR,No messages for more than 3 seconds,live
+188.045,Camera,OK,Messages arriving,live
+199.785,Camera,ERROR,No messages for more than 3 seconds,live
+200.037,Camera,OK,Messages arriving,live
+203.049,Camera,ERROR,No messages for more than 3 seconds,live
+204.048,Camera,OK,Messages arriving,live
+212.788,Camera,ERROR,No messages for more than 3 seconds,live
+213.036,Camera,OK,Messages arriving,live
+222.536,Camera,ERROR,No messages for more than 3 seconds,live
+223.785,Camera,OK,Messages arriving,live
+238.537,Camera,ERROR,No messages for more than 3 seconds,live
+241.034,Camera,OK,Messages arriving,live
+246.037,Camera,ERROR,No messages for more than 3 seconds,live
+246.785,Camera,OK,Messages arriving,live
+249.789,Camera,ERROR,No messages for more than 3 seconds,live
+250.038,Camera,OK,Messages arriving,live
+255.789,Camera,ERROR,No messages for more than 3 seconds,live
+257.795,Camera,OK,Messages arriving,live
+264.535,Camera,ERROR,No messages for more than 3 seconds,live
+266.288,Camera,OK,Messages arriving,live
+270.284,Camera,ERROR,No messages for more than 3 seconds,live
+270.535,Camera,OK,Messages arriving,live
+280.284,Camera,ERROR,No messages for more than 3 seconds,live
+281.034,Camera,OK,Messages arriving,live
+292.284,Camera,ERROR,No messages for more than 3 seconds,live
+292.793,Camera,OK,Messages arriving,live
+296.786,Camera,ERROR,No messages for more than 3 seconds,live
+298.534,Camera,OK,Messages arriving,live
+307.037,Camera,ERROR,No messages for more than 3 seconds,live
+308.286,Camera,OK,Messages arriving,live
+345.037,Camera,ERROR,No messages for more than 3 seconds,live
+346.04,Camera,OK,Messages arriving,live
+356.042,Camera,ERROR,No messages for more than 3 seconds,live
+356.536,Camera,OK,Messages arriving,live
+364.288,Camera,ERROR,No messages for more than 3 seconds,live
+364.784,Camera,OK,Messages arriving,live
+369.286,Camera,ERROR,No messages for more than 3 seconds,live
+369.785,Camera,OK,Messages arriving,live
+374.785,Camera,ERROR,No messages for more than 3 seconds,live
+375.285,Camera,OK,Messages arriving,live
+381.789,Camera,ERROR,No messages for more than 3 seconds,live
+385.039,Camera,OK,Messages arriving,live
+405.287,Camera,ERROR,No messages for more than 3 seconds,live
+406.544,Camera,OK,Messages arriving,live
